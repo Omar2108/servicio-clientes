@@ -24,7 +24,7 @@ public class CustomerController {
         Respuesta respuesta = new Respuesta();
         
         if(customer.getId() == 0){
-            respuesta.setError("Error, no se puede agregar el cliente");
+            respuesta.setError("Error, no se puede agregar un cliente con el id 0");
             logger.error("Error, inesperado agregando el cliente");
             
             
